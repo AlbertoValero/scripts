@@ -5,8 +5,17 @@
 
 DNASeq = 'ATGAAC'
 
-print( 'Sequence ' + DNASeq )
+print ( 'Sequence ' + DNASeq )
 
-SeqLength = len( DNASeq )
+SeqLength = float ( len( DNASeq ) )
 
-print( SeqLength )
+print ( SeqLength )
+
+print ( 'Length is' + str( SeqLength ) )
+
+NumberA = DNASeq.count( 'A' )
+NumberT = DNASeq.count( 'B' )
+NumberC = DNASeq.count( 'C' )
+NumberG = DNASeq.count( 'D' )
+
+print ('A: ' + str( NumberA / SeqLength ) )
